@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Cryptallica || Heavy Metal Cryptocurrency</title>
+<link rel="stylesheet" href="_css/main.css">
+
+<script src="_js/core.js"></script>
+</head>
+
+<body>
+
+<!------------Header------------>
+<div id="fixedHeader">
+	<img src="_assets/coin.png">
+	
+	<a href="javascript:;">Wallet</a>
+	<a href="javascript:;">Donator</a>
+	<a href="https://github.com/cryptallica" target="_blank">Github</a>
+</div>
+
+<!------------Parallax Data------------>
+<div class="parallax" id="lightningBackground">
+    
+    <!------------Parallax Intro------------>
+	<div class="parallax__group">
+		<div class="parallax__layer parallax__layer--back" ></div>
+    
+		<div class="parallax__layer parallax__layer--base" id="cryptHeader">
+			<img src="_assets/logo.png">
+			<p>Heavy Metal Cryptocurrency</p>
+			
+		</div>
+	</div>
+
+    <!------------Main Content------------>
+	<div class="parallax__group" id="contentWrap">
+        <div class="parallax__layer" id="content">
+        <h2>Ride the Lightning</h2>
+        
+        <p>Today's digital world has brought us fantastic new technologies one of the most fasinating being cryptocurrencies. Using advanced hashing algorithms cryptocurrencies like Bitcoin, Dogecoin, and Litecoin etc.. create a decentralized way and very inexpensive way of sending a form of currency through the internet. We think that is awesome here at Cryptallica. With so many cryptocurrencies making a great (and sometimes negative) impact on our world it can be hard to keep up or even start up. This is why we aim to create software that helps using, developing, and creating crptocurrency platforms.</p>
+    
+            <h2>What do we do?</h2>
+            
+            <p>Cryptocurrency software with a good dose of metal. Currently we offer a multi cryptocurrency wallet, a cryptocurrency donator, and coming soon a cryptocurrency cart manager. All of our software is open-source free software released under GPL v2.0 and always remain so. Feel free to download, hack, or contribute to the Cryptallica project. We are run purely on donations and drive for great applications. View our software below.</p>
+        
+            <h2>Software and projects</h2>
+            
+            <div id="softwareKeys">
+                <a data="wallet">Wallet</a>
+                <a data="donator">Donator</a>
+                <a data="cart">Cart</a>
+            </div>
+            
+            <span id="softwareData">
+                <div data="wallet">
+                    <h2>Cryptallica Wallet</h2>
+                    
+                    <a href="wallet">Main Page</a>
+                    <a href="https://github.com/cryptallica/wallet" target="_blank">Github</a>
+                    <a href="download">Download</a>
+                    <a href="https://cryptallica.readme.io" target="_blank">Documentation</a>
+                    
+                    <p>The Cryptallica wallet is a multi cryptocurrency wallet complete with all essential function found in a cryptocurrency wallet such as sending coins, encrypting your wallet, importing addresses and keys, and backing up your wallet. The wallet works with a number of coins listed below. Along with typical coin functions, the wallet also offers a QR camera and file reader. Our wallet is programmed with security and freedom in mind and all of our code is hosted on github and the cryptallica site. Like all of Cryptallica's products, our wallet is free under a GPL liscence.</p>
+                    
+                    <h3>Screenshots</h3>  
+                    
+                    <div id="screenshotspreview">
+                        <img src="_assets/screenshots/wallet-home.png">
+                        <img src="_assets/screenshots/wallet-qr.png">
+                        <img src="_assets/screenshots/wallet-coinhome.png">
+                        <img src="_assets/screenshots/wallet-send.png">
+                        <img src="_assets/screenshots/wallet-history.png">
+                        <img src="_assets/screenshots/wallet-io.png">
+                    </div>
+                    
+                    <h3>Tested Coins</h3>
+                    <span id="walletCoins">
+                        <a href="https://bitcoin.org" target="_blank">
+                            <img src="_assets/icons/bitcoin.png">
+                            Bitcoin
+                        </a>
+                        
+                        <a href="https://litecoin.org/" target="_blank">
+                            <img src="_assets/icons/litecoin.png">
+                            Litecoin
+                        </a>
+                        
+                        <a href="http://dogecoin.com/" target="_blank">
+                            <img src="_assets/icons/dogecoin.png">
+                            Dogecoin
+                        </a>
+                        
+                        <a href="http://cannabiscoin.net/" target="_blank">
+                            <img src="_assets/icons/cannabiscoin.png">
+                            Cannabiscoin
+                        </a>
+                            
+                        <a href="http://www.peercoin.net/" target="_blank">
+                            <img src="_assets/icons/peercoin.png">
+                            Peercoin
+                        </a>
+                        
+                        <a href="https://www.darkcoin.io/" target="_blank">
+                            <img src="_assets/icons/darkcoin.png">
+                            Darkcoin
+                        </a>
+                    </span>                 
+                        
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>PHP > 5.3</li>
+                        <li>curl for php</li>
+                        <li>gd for php (for check creation)</li>
+                        <li>Coin server of desired coins</li>
+                        <li>JavaScript</li>
+                        <li>Browser</li>
+                        <ul>
+                            <li>Opera > 10</li>
+                            <li>Chrome > 27</li>
+                            <li>IE > 7</li>
+                            <li>Firefox > 27</li>
+                        </ul>
+                    </ul>
+                </div>
+                
+                <div data="donator">
+                    <h2>Donator</h2>
+                    
+                    <a href="https://github.com/cryptallica/wallet" target="_blank">Github</a>
+                    <a href="download">Download</a>
+                    <a href="https://cryptallica.readme.io" target="_blank">Documentation</a>
+                    
+                    <h3>Check it out</h3>
+                    <div id="donatorDemo"></div>
+                    
+                    <p>The Cryptallica Donator is an easy to use JavaScript cryptocurrency address donator widget. The donator is pure javascript and uses the canvas to create dynamic QR codes, but the donator also offers a fallback for using images as QR codes. Setting is up is very easy and the package is only 100kb. Above is also all of the current built in coins. Adding coins is also very easy. Vist the <a href="https://cryptallica.readme.io" target="_blank">doc</a>.</p>
+                    
+                    <h3>Requirements</h3>
+                    <h4>Using Canvas</h4>
+                    <ul>
+                        <li>Firefox 31+</li>
+                        <li>IE 9+</li>
+                        <li>Chrome 31+</li>
+                        <li>Safari 5.1+</li>
+                        <li>Opera 24+</li>
+                    </ul>
+                    
+                    <h4>Image Fallback</h4>
+                    <ul>
+                        <li>Firefox 20+</li>
+                        <li>IE 7+</li>
+                        <li>Chrome 10+</li>
+                        <li>Safari 4+</li>
+                        <li>Opera 10+</li>
+                    </ul>                    
+                    
+                </div>
+                
+                <div data="cart">
+                    <h2>Coming soon</h2>
+                </div>
+            </span>
+        </div>
+    </div>
+    
+    <!------------Footer------------>
+    <div class="parallax__group" id="footerWrap">
+         <div class="parallax__layer" id="footer">
+             <h2>Stay in the loop!</h2>
+             
+             <span id="signupBox">
+                 <form action="controllers/singup.php" method="POST" target="_blank" id="emailsignupform">
+                 <input type="text" name="email" placeholder="somebody@example.com">
+                 <button type="submit">Subscribe!</button>
+                 </form>
+             </span>   
+             
+            <p>Cryptallica is a free (as in freedom) and open-source software collection dedicated to safe, smart, and intuitive cryptocurrency software. Cryptallica is run solely on donation and drive for great applications. Please feel free to contact us about ideas, bugs, questions, or anything under the sun. <a href="mailto:cryptallica.io@gmail.com">Email</a></p>
+            
+            <div id="donatetocryptallica"></div>
+            <hr/>
+            <p>Creative Commons</p>
+        </div>       
+    </div>
+</div>
+
+<script src="_js/donator/donator.js"></script>
+<script src="_js/wilsonblock/wilsonblock.js"></script>
+<script type="text/javascript">
+//Setup navigator show
+var mainContent = document.getElementById("lightningBackground");
+var fixedHeader = document.getElementById("fixedHeader");
+
+//Initial navigator setup
+fixedHeader.style.top = "-4em";
+var navShow = false;
+
+//When scrolled show navigator
+mainContent.onscroll = function() {
+    //console.log(mainContent.scrollTop);
+    var scrollTop = mainContent.scrollTop;
+    if(scrollTop > 740 && navShow === false) {
+        setTimeout(function() {
+            fixedHeader.style.top = null;
+            navShow = true;
+        }, 25);
+    } else if(scrollTop < 740 && navShow === true) {
+        setTimeout(function() {
+            fixedHeader.style.top = "-4em";
+            navShow = false;
+        }, 25);
+    }
+}
+
+//Setup software toggler
+var softwareToggler = new PageToggler("softwareKeys", "softwareData", {
+    keyAttribute: "data",
+    homeName: "wallet"
+});
+
+//Setup Donators
+var donatorDemo = new CryptDonator("donatorDemo");    
+var mainDonator = new CryptDonator("donatetocryptallica");  
+
+//Setup screenshot wilsonblock carousel
+var screenshotWilson = new WilsonBlock("screenshotspreview");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+/****************************Global Crypt Donate****************************/
+.cryptdonate-wrapper {
+	display: block;
+	font-size: 16px;
+	position: relative;
+	margin: 0 auto;
+	background: rgb(230,230,230);
+	box-shadow: 0 0 0 1px rgb(0,0,0);
+	border-radius: 10px;
+	max-width: 40em;
+	height: 18em;
+	padding-left: 15em;
+	font-family: helvetica;
+	font-weight: 100;
+}
+
+.cryptmobile {
+	padding-left: 0;
+}
+
+.sizeUp {
+	-webkit-transform: scale(1);
+}
+
+.sizeDown {
+	-webkit-transform: scale(.7);
+}
+
+
+/****************************Main Nav****************************/
+.cryptdonate-header {
+	font-size: 1.2em;
+	font-weight: 100;
+	background: rgb(255,255,255);
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	padding: 5px 0;
+	text-align: center;
+	margin: 0;
+	border-radius: 9px 0 0 0;
+	border-bottom: 1px solid rgb(0,0,0);
+	z-index: 2;
+}
+
+.cryptdonate-headercoin {
+	color: rgb(130,130,130);
+}
+
+.cryptdonate-nav {
+	position: absolute;
+	z-index: 6;
+	left: 0;
+	top: 0;
+	
+	border-right: 1px solid rgb(0,0,0);
+	border-radius: 9px 0 0 9px;
+	
+	background: rgb(230,230,230);
+	background: -webkit-linear-gradient(45deg, 
+		rgb(220,220,220) 0%, rgb(255,255,255) 100%
+	);
+	background: -moz-linear-gradient(45deg, 
+		rgb(220,220,220) 0%, rgb(255,255,255) 100%
+	);
+	background: -ms-linear-gradient(45deg, 
+		rgb(220,220,220) 0%, rgb(255,255,255) 100%
+	);
+	background: linear-gradient(45deg, 
+		rgb(220,220,220) 0%, rgb(255,255,255) 100%
+	);
+}
+
+.cryptdonate-iconswrap {
+	padding: 2.5em 5px 0 5px;
+	position: absolute;
+	height: 15.5em;
+	overflow-y: auto;
+}
+
+.cryptdonate-iconswrap .selected {
+	background: rgb(0,0,0) !important;
+	color: rgb(255,255,255);
+	border-radius: 15px;
+}
+
+.cryptdonate-coindiv {
+	width: 33.3%;
+	padding: 5px 0;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	top: 0;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+
+.cryptdonate-coindiv:last-of-type {
+	margin-bottom: 5px;
+}
+
+.cryptdonate-coindiv:hover {
+	background: rgb(100,130,255);
+	border-radius: 15px;
+	top: 3px;
+	color: rgb(255,255,255);
+}
+
+.cryptdonate-coindiv > img {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+.cryptdonate-coindiv > h3 {
+	font-size: 10px;
+	text-align: center;
+}
+
+/*Mobile Specify*/
+.cryptmobile .cryptdonate-header {
+	border-radius: 9px 9px 0 0;
+	border-right: 1px solid rgb(0,0,0);
+}
+
+.cryptmobile .cryptdonate-nav {
+	width: 100%;
+	margin: 0 auto;
+	height: 1.5em;
+	border-radius: 10px;
+}
+
+.cryptmobile .cryptdonate-nav:hover {
+	height: 100%;
+}
+
+.cryptmobile .cryptdonate-nav:hover .cryptdonate-iconswrap {
+	display: block;
+	opacity: 1;
+}
+
+.cryptmobile .cryptdonate-iconswrap {
+	width: 98.2%;
+	display: none;
+	border-radius: 9px;
+	top: 5px;
+	opacity: 0;
+		
+	border-bottom: 1px solid rgb(0,0,0);
+	background: rgb(230,230,230);
+	background: -webkit-linear-gradient(45deg, 
+		rgb(220,220,220) 0%, rgb(255,255,255) 100%
+	);
+	background: -moz-linear-gradient(45deg, 
+		rgb(220,220,220) 0%, rgb(255,255,255) 100%
+	);
+	background: -ms-linear-gradient(45deg, 
+		rgb(220,220,220) 0%, rgb(255,255,255) 100%
+	);
+	background: linear-gradient(45deg, 
+		rgb(220,220,220) 0%, rgb(255,255,255) 100%
+	);
+}
+
+.cryptmobile .cryptdonate-coindiv {
+	width: 25%;
+}
+
+/*Desktop Specify*/
+.cryptdesktop .cryptdonate-nav {
+	width: 15em;
+	height: 100%;
+}
+
+
+/****************************Qr and Address****************************/
+.cryptdonate-qrArea {
+	background: rgb(230,230,230);
+	height: 88%;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	border-radius: 0 9px 9px 0;
+	padding-bottom: 2.1em;
+}
+
+.cryptdonate-qrCanvas {
+	width: 100%;
+	height: 101%;
+	background: rgb(255,255,255);
+	position: relative;
+	top: 0;
+	overflow-x: auto;
+	overflow: hidden;
+}
+
+.cryptdonate-qrArea img  {
+	max-width: 280px;
+	border-radius: 10px;
+	width: 80%;
+	display: block;
+}
+
+.cryptdonate-qrCanvas > div {
+	margin: 0 auto;	
+	width: 80%;
+	max-width: 300px;
+	left: 2.5em;
+	position: relative;
+	-webkit-transition: all .5s ease-in;
+	-moz-transition: all .5s ease-in;
+	-ms-transition: all .5s ease-in;
+	transition: all .5s ease-in;
+}
+
+.cryptdonate-address {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	bottom: 0;
+	padding: 8px 0 8px 3%;
+	font-size: 12px;
+	margin: 0;
+	left: 0;
+	width: 97%;
+	border-radius: 0 0 9px 9px;
+	border: none;
+	border-top: 1px solid rgb(0,0,0);
+	background: rgb(230,230,230);
+	text-decoration: none;
+	-webkit-transition: background .3s ease-in;
+}
+
+.cryptdonate-address:hover {
+	outline: none;
+	background: rgb(255,255,230);
+}
+
+/*Mobile Specify*/
+.cryptmobile .cryptdonate-qrCanvas {
+	border-radius: 10px;
+	top: 5px;
+}
+
+.cryptmobile .cryptdonate-qrArea {
+	border-radius: 10px;
+}
+
+.cryptmobile .cryptdonate-qrCanvas > div {
+	top: 25px;
+}

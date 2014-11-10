@@ -1,0 +1,52 @@
+{
+	"bitcoin": {
+		"address": "1Hyhm23xzUeRKjGCQMxBjmQMXGmtWPcnko",
+		"label": "Bitcoin to Chuck"
+	},
+
+	"litecoin": {
+		"address": "LgwdgsLa1dXaoHcPc6uSy4LFmjurBu8yyV"
+		
+	},
+
+	"cannabiscoin": {
+		"address": "CHE5skn37JAdVoQhZuLKpiAA3k7T3pGDH8"
+	},
+	
+	"reddcoin": {
+		"address": "RcQrUa1tnFHyrvJiQn1YvB1xd7i5jncVuL"
+	},
+	
+	"dogecoin": {
+		"address": "D7FZRJijWDtoRmivMB1wHeVJMgH9JAHGc4",
+		"label": ""	
+	},
+	
+	"namecoin": {
+		"address": "MyTHAKpytEkuVP9KkxikpY4CtWYvAaUcmr"
+	},
+	
+	"darkcoin": {
+		"address": "XeSPqTMLwYrba5vWeMkmk3ChiYH8sBZnmW"
+	},
+	
+	"peercoin": {
+		"address": "PMMzve6cVuyJ2tvvLZhztdKoFxiPqBmKcy"
+	},
+	
+	"feathercoin": {
+		"address": "6j8BduXeNFV7QynDKhUdkNJC3yTkZYVZ2q"
+	},
+	
+	"quarkcoin": {
+		"address": "QSUQoGGqUpWRKYiW2BwwatHS1WfNFe9LN7"
+	},
+	
+	"digitalcoin": {
+		"address": "DFVLRj2rfKtSPb8SHgNioPDwMWmzTdxDbM"
+	},
+	
+	"stellar": {
+		"address": "g4VSoWb56FUDbvsaQvEPjKY1Xj2AeeTK2U"	
+	}
+}

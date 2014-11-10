@@ -1,0 +1,260 @@
+/**************Wilson window**************/
+.wilson-window {
+	display: block;
+	z-index: 0;
+	width: 90%;
+	height: 25em;
+	position: relative;
+	padding: 20px 0;
+	margin: 10px auto;
+}
+
+/**************SLIDES Styling**************/
+.wilson-window div {
+	position: absolute;
+	margin: 0 auto;
+	
+	background: rgb(255,255,255);
+	height: 25em;
+	width:100%;
+	overflow-y: auto;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+}
+
+.wilson-window div h1 {
+	text-align: center;
+	font-size: 50px;
+	background: rgb(50,240,220);
+	padding: 10px;
+	margin: 0;
+}
+
+.wilson-window div h2 {
+	font-size: 30px;
+	padding: 5px;
+	background: rgb(0,0,0);
+	color: rgb(255,255,255);
+	box-shadow: 4px 4px 0 rgb(100,100,100);
+	width: 80%;
+}
+
+.wilson-window div li {
+	padding: 2px;
+	background: rgb(200,200,200);
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+
+.wilson-window div p {
+	font-size: 20px;
+	max-width: 80%;
+	padding: 2px;
+}
+
+.wilson-window div img {
+	float: left;
+	clear:none;
+	margin: 0;
+	width:100%;
+}
+
+.wilson-window div span {
+	background: rgb(0,0,0);
+	color: rgb(255,255,255);
+	padding: 5px;
+}
+
+.wilson-window div table {
+	width: 100%;
+	position: relative;
+}
+
+.wilson-window div table tr th img{
+	width: 200px;
+}
+
+.wilson-window div table tr td {
+	font-size: 30px;
+	padding: 2px;
+	border-bottom: 2px dashed rgb(0,0,0);border-right: 2px dashed rgb(0,0,0);
+}
+
+
+
+
+
+
+
+/**************Slide Actions**************/
+
+.wilson-pre, .wilson-next {
+	background: rgb(0,0,0);
+	color: rgb(255,255,255);
+	font-size: 30px;
+	padding: 5px 10px;
+	display: inline;
+	z-index: 5;
+	bottom: 10px;
+	position: absolute;
+	cursor: hand;
+	border: 2px solid rgb(255,255,255);
+}
+
+.wilson-pre {
+	left: -5px;
+}
+
+.wilson-next {
+	right: -5px;
+
+}
+
+.wilson-slides {
+	position: absolute;
+	top: -10px;
+	font-size: 20px;
+	color: rgb(255,255,255);
+}
+
+
+/**************Animation Actions**************/
+
+/*Normal Default Opacity transition*/
+.opacityOn {
+	opacity: 1;
+	z-index: 1;
+}
+
+.opacityOff {
+	opacity: 0;
+	z-index: -1;
+}
+
+
+/*Wohman*/
+.wohmanOn {
+	opacity: 1;
+	z-index: 2;
+	right: 0;
+	-webkit-animation-name: wohmanOn;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+}
+
+
+.wohmanOff {
+	right: 0;
+	z-index: 1;
+	-webkit-animation-name: wohmanOff;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes wohmanOn {
+	0% {
+		left: 0;
+		-webkit-transform: rotate(0) scale(1);
+		z-index: 0;
+		opacity:0;
+	}
+	
+	50% {
+		left: 60%;
+		-webkit-transform: rotate(-30deg) scale(.75);
+		opacity: 1;
+		z-index: 2;
+	}
+	
+	100% {
+		left: 0;
+		-webkit-transform: rotate(0) scale(1);
+	}
+}
+
+@-webkit-keyframes wohmanOff {
+	0% {
+		left: 0;
+		-webkit-transform: rotate(0) scale(1);
+		z-index: 2;
+	}
+	
+	50% {
+		left: -60%;
+		-webkit-transform: rotate(30deg) scale(.75);
+		z-index: 1;
+		opacity: 1;
+	}
+	
+	100% {
+		left:0;
+		opacity:0;
+		-webkit-transform: rotate(0) scale(1);
+	}
+}
+
+
+
+/*3D Flip*/
+
+.vFlipOn {
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: top right;
+	-webkit-animation-name: vFlipOn;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes vFlipOn {
+	0% {
+		z-index: 3;
+		-webkit-transform-origin: top left;
+		-webkit-transform: rotateY(-90deg) rotateX(-90deg);
+		opacity: 0;
+	}
+	
+	30% {
+		opacity: 1;
+	}
+	
+	100% {
+		z-index: 3;
+		-webkit-transform: rotateY(0) rotateX(-0);
+	}
+	
+	
+}
+
+.vFlipOff {
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: top right;
+	-webkit-animation-name: vFlipOff;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes vFlipOff {
+	0% {
+		z-index: 1;
+		-webkit-transform: rotateY(0) rotateX();
+		opacity: 1;
+	}
+	
+	70% {
+		opacity: 0;
+	}
+	
+	100% {
+		z-index: 1;
+		-webkit-transform: rotateY(90deg) rotateX(90deg);
+	}
+	
+	
+}
+
+
+
